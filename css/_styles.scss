@@ -1,0 +1,155 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+
+	background: $light-grey;
+
+	color: $default-font;
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+
+h1 {
+	font-family: 'Abel', Helvetica, Arial, sans-serif;
+
+	margin-bottom: 1.25em;
+
+  font-size: 1.15em;
+  letter-spacing: 0.01em;
+  line-height: 1.35em;
+}
+
+h2 {
+	font-family: Garamond, serif;
+
+	margin-bottom: 1.25em;
+
+  font-size: 1.25em;
+  letter-spacing: .2em;
+  line-height: 1.35em;
+  font-variant: small-caps;
+}
+
+h3 {
+  margin-bottom: 0.5em;
+  padding-top: 1em;
+
+  font-size: 1em;
+  letter-spacing: 0.01em;
+  line-height: 1.35em;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1em;
+
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  line-height: 1.65em;
+}
+
+ul {
+  list-style-image: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.nav {
+	height: 80px;
+	width: 100%;
+	// padding: 0 25px;
+	z-index: 9;
+	background-color: $white;
+	@include boxshadow($light-grey);
+
+	h1,
+	h2 {
+		height: 80px;
+  	line-height: 80px;
+  	margin-bottom: 0;
+	}
+}
+
+.link.active {
+  color: $white;
+
+  span.active {
+    background-color: $accent;
+    border-radius: 6px;
+    padding: 5px 12px;
+  }
+}
+
+.links {
+  text-align: right;
+
+  .link {
+    padding: 0 5%;
+  }
+}
+
+.footer {
+	background-color: $white;
+  text-align: center;
+  padding-bottom: 50px;
+  position: relative;
+  color: $medium-grey;
+
+  .logo{
+    opacity: .5;
+    width: 150px;
+    position: relative;
+    // top: -15%;
+    // left: 40%;
+    transform: translateY(-50px)
+  }
+
+  p{
+    font-size: .85em;
+  }
+}
+
+.hero{
+	background-color: $light-blue;
+	width: 100%;
+  position: relative;
+  height: 60px;
+	padding: 50px 0;
+  margin-bottom: 120px;
+	text-align: center;
+	@include boxshadow(#C7C7C7);
+
+  img {
+    position: relative;
+    width: 300px;
+  }
+}
+
+
+.center {
+  @include mq(medium) {
+    padding: 0 15px;
+  }
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 3%;
+
+  overflow: visible;
+  position: relative;
+}
+
+.content {
+	padding: 20px 0;
+}
+
+.main {
+  padding-bottom: 150px;
+}

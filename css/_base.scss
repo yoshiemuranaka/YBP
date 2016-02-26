@@ -1,0 +1,116 @@
+//////////////////
+//  COLORS  ///
+////////////////
+
+$white: #FFF;
+$black: #000;
+$grey: #2b2b2b;
+$light-grey: #f9f9f9;
+$medium-grey:#797878;
+$light-blue: #dae9f2;
+
+$accent: #d88832;
+
+$default-font: $grey;
+$body: $light-grey;
+$hover-color: $default-font;
+$footer-color: $light-blue;
+
+
+//////////////////////
+//  MEDIA QUERIES  ///
+/////////////////////
+
+@mixin mq($point) {
+  @if $point == medium {
+    @media only screen and (min-width: 43.750em) {
+      @content;
+    }
+  }
+  @else if $point == small-only {
+    @media only screen and (max-width: 43.688em) {
+      @content
+    }
+  }
+}
+
+//////////////////
+//  GRID  ///////
+////////////////
+
+
+@mixin clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: '';
+
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.grid {
+  @include clearfix();
+
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.col {
+  @include mq(medium) {
+    margin-bottom: 0;
+  }
+
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+@include mq(medium) {
+  .col.half {
+    width: 50%;
+  } 
+
+  .col.quarter {
+    width: 25%;
+  }
+
+  .col.oneThird {
+    width: 33.3333%
+  }
+
+  .col.twoThirds {
+    width: 66.6666%
+  }
+}
+
+///////////////////
+//  BOX SHADOW  ///
+//////////////////
+
+@mixin boxshadow($color) {
+  box-shadow: 0 1px 5px $color;
+
+  -webkit-box-shadow: 0 1px 5px $color;
+  -moz-box-shadow: 0 1px 5px $color;
+}
+
+
+///////////////////
+//  UTILITIES  ///
+//////////////////
+
+.hide-sm {
+  @include mq(small-only){
+    display: none;
+  }
+}
+
+
+
