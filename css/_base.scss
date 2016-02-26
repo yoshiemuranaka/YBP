@@ -90,6 +90,15 @@ $footer-color: $light-blue;
   }
 }
 
+@include mq(small-only) {
+  .col.sm-two-thirds{
+    width: 66.6666%;
+  }
+  .col.sm-one-third {
+    width: 33.3333%
+  }
+}
+
 ///////////////////
 //  BOX SHADOW  ///
 //////////////////
@@ -112,5 +121,11 @@ $footer-color: $light-blue;
   }
 }
 
+.show-sm {
+  display: block;
+  @include mq(medium){
+    display: none;
+  }
+}
 
 

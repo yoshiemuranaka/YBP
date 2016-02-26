@@ -53,6 +53,11 @@ p {
   line-height: 1.65em;
 }
 
+a {
+   text-decoration: inherit;
+    color: inherit;
+}
+
 ul {
   list-style-image: none;
 
@@ -77,6 +82,14 @@ ul {
 	}
 }
 
+.burger-menu {
+  height: 80px;
+  line-height: 80px;
+  padding-right: 1em;
+  text-align: right;
+  font-size: 1.25em;
+}
+
 .link.active {
   color: $white;
 
@@ -89,6 +102,10 @@ ul {
 
 .links {
   text-align: right;
+  
+  &:hover{
+    cursor: pointer;
+  }
 
   .link {
     padding: 0 5%;
@@ -122,7 +139,7 @@ ul {
   position: relative;
   height: 60px;
 	padding: 50px 0;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 	text-align: center;
 	@include boxshadow(#C7C7C7);
 
@@ -138,7 +155,7 @@ ul {
     padding: 0 15px;
   }
 
-  max-width: 800px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 0 3%;
 
@@ -147,9 +164,38 @@ ul {
 }
 
 .content {
-	padding: 20px 0;
+	padding: 50px 0 20px;
+
+  .headshot{
+    text-align: center;
+    h3{
+      padding: 0;
+      margin: 0;
+    }
+
+    padding-bottom: 50px;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
 }
 
 .main {
   padding-bottom: 150px;
+}
+
+.author {
+  margin-top: -10px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.link-style {
+  text-decoration: underline;
+  color: $accent;
+  &:hover {
+    cursor: pointer;
+  }
 }
