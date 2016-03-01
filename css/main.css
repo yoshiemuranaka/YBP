@@ -62,10 +62,11 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 h1 {
-  font-family: 'Abel', Helvetica, Arial, sans-serif;
+  font-family: Garamond, serif;
+  font-variant: small-caps;
   margin-bottom: 1.25em;
   font-size: 1.15em;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
   line-height: 1.35em; }
 
 h2 {
@@ -77,9 +78,11 @@ h2 {
   font-variant: small-caps; }
 
 h3 {
+  font-family: Garamond, serif;
+  font-variant: small-caps;
   margin-bottom: 1.15em;
   padding-top: 1em;
-  font-size: 1em;
+  font-size: 1.25em;
   letter-spacing: 0.01em;
   line-height: 1.35em;
   font-weight: 700; }
@@ -152,16 +155,16 @@ ul {
   background-color: #dae9f2;
   width: 100%;
   position: relative;
-  height: 60px;
+  height: 90px;
   padding: 50px 0;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
   text-align: center;
   box-shadow: 0 1px 5px #C7C7C7;
   -webkit-box-shadow: 0 1px 5px #C7C7C7;
   -moz-box-shadow: 0 1px 5px #C7C7C7; }
   .hero img {
     position: relative;
-    width: 300px; }
+    width: 325px; }
 
 .center {
   max-width: 750px;
@@ -209,5 +212,12 @@ ul {
 .footer p.link {
   margin-bottom: 0;
   cursor: pointer; }
+
+.mission-statement {
+  font-size: 2em;
+  max-width: 750px;
+  margin: 0 auto;
+  color: #797878;
+  padding-top: 50px; }
 
 /*# sourceMappingURL=main.css.map */
