@@ -52,6 +52,9 @@
 .bold {
   font-weight: bold; }
 
+.border {
+  border: 1px solid #797878; }
+
 html,
 body {
   height: 100%; }
@@ -65,7 +68,7 @@ h1 {
   font-family: Garamond, serif;
   font-variant: small-caps;
   margin-bottom: 1.25em;
-  font-size: 1.15em;
+  font-size: 1.25em;
   letter-spacing: 0.1em;
   line-height: 1.35em; }
 
@@ -83,13 +86,13 @@ h3 {
   margin-bottom: 1.15em;
   padding-top: 1em;
   font-size: 1.25em;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
   line-height: 1.35em;
   font-weight: 700; }
 
 p {
   margin-bottom: 1em;
-  font-size: 1em;
+  font-size: 1.15em;
   letter-spacing: 0.02em;
   line-height: 1.65em; }
 
@@ -219,5 +222,10 @@ ul {
   margin: 0 auto;
   color: #797878;
   padding-top: 50px; }
+
+.stock {
+  box-shadow: 0 1px 5px #f9f9f9;
+  -webkit-box-shadow: 0 1px 5px #f9f9f9;
+  -moz-box-shadow: 0 1px 5px #f9f9f9; }
 
 /*# sourceMappingURL=main.css.map */
