@@ -142,16 +142,24 @@ ul {
   }
 }
 
+.banner {
+    background-color: $light-blue;
+  width: 100%;
+  position: absolute;
+  height: 190px;
+  @include boxshadow(#C7C7C7);
+
+}
 .hero{
-	background-color: $light-blue;
+	// background-color: $light-blue;
 	width: 100%;
   position: relative;
-  height: 90px;
-	padding: 50px 0;
+  padding-top: 50px;
+  // height: 90px;
+	// padding: 50px 0;
   // margin-bottom: 100px;
-  margin-bottom: 300px;
+  // margin-bottom: 300px;
 	text-align: center;
-	@include boxshadow(#C7C7C7);
 
   img {
     position: relative;
@@ -214,6 +222,17 @@ ul {
   }
 }
 
+.button-style{
+  color: $white;
+
+  // span.active {
+    background-color: $accent;
+    border-radius: 6px;
+    padding: 5px 12px;
+  // }
+  cursor: pointer;
+}
+
 .footer p.copyright {
   color: $medium-grey;
   opacity: .7;
@@ -233,9 +252,14 @@ ul {
   margin: 0 auto;
   color: $medium-grey;
 
-  padding-top: 50px;
+  // padding-top: 50px;
 }
 
 .stock{
   @include boxshadow($light-grey)
+}
+
+.placeholdit{
+  display: inline-block;
+  padding-top: 50px;
 }
